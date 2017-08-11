@@ -1,0 +1,132 @@
+@import "compass";
+@import url(https://fonts.googleapis.com/css?family=Abel);
+// font-family
+$baseFontFamily :"游ゴシック", YuGothic, "メイリオ",Verdana, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+
+// colors
+$baseColor: #fdfcf6;
+$subColor: #bea300;
+$keyColor: #14c0c9;
+$fontColor: #4c4c4c;
+$boxColor: #b0b0b0;
+$h2Color: #000000;
+$baseColor2: #e7e4e4;
+
+/* Base
+------------------------------------------------------------*/
+html{ font-size: 62.5%; }
+
+body{
+  color: $fontColor;
+  font-size: 1.4rem;
+  font-family:$baseFontFamily;
+  line-height:1.6;
+  letter-spacing: 0.1em;
+  background-color: $baseColor;
+}
+
+a {
+  @include link-colors($keyColor, darken($keyColor, 10%), lighten($keyColor, 5%), darken($keyColor, 10%));
+  text-decoration: none;
+}
+
+/* Align
+------------------------------------------------------------*/
+.text-center {
+  text-align: center;
+}
+
+/* Font
+------------------------------------------------------------*/
+.abel {
+  font-family: 'Abel', sans-serif;
+}
+.uppercase {
+  text-transform: uppercase;
+}
+
+/* Main
+------------------------------------------------------------*/
+// Align
+.text-center {
+  text-align: center;
+}
+
+/* Header
+------------------------------------------------------------*/
+.flexible-images img{
+    width: 100%;
+    height: auto;
+    background-size:cover;
+    margin:0px;
+}
+
+// Skills
+#skills {
+  background-color: $subColor; 
+  margin:0px;
+  
+/*メディアクエリ-start*/
+.container {
+    display: flex;
+    justify:space-between;
+    flex-direction:row;
+}
+.box {
+    border: solid 1px skyblue;
+    margin: 10px;
+    padding:  0px;
+    background-color: $boxColor;
+    flex: 1;
+.box2 {
+    width:auto;
+    height:100px;
+    border: solid 1px skyblue;
+    margin: 0px;
+    padding: 10px;
+    background-color: $baseColor;
+    flex: 1;
+}
+}
+@media (max-width: 768px) {
+    .container {
+    flex-direction: column;
+  }
+}
+/*メディアクエリ-end*/
+
+h2 {
+    color: $h2Color;
+    margin-bottom: 60px;
+    font-size: 2.5rem;
+  }
+h3 {
+    @extend .abel;
+    @extend .uppercase;
+    color: $h2Color;
+    font-weight: bold;
+  }
+}
+/* Footer
+------------------------------------------------------------*/
+// button
+#button {
+ background-color:$baseColor;
+ margin:50px;
+ background-color:$baseColor2;
+ margin:0px;
+ h2 {
+    color: $h2Color;
+    margin-bottom: 0px;
+    font-size: 2.5rem;
+    margin:2px;
+ }
+ h3 {
+    @extend .abel;
+    @extend .uppercase;
+    color: $h2Color;
+    font-weight: bold;
+    font-size: 2.5rem;
+  }
+
+}
