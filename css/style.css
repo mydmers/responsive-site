@@ -43,7 +43,7 @@ a {
 
 /* Header
 ------------------------------------------------------------*/
-.flexible-images div {
+.flexible-images {
   background-image: url("../images/mt_Fuji.jpg");
   width: auto;
   height: 100%;
@@ -51,7 +51,7 @@ a {
   margin: 0px; }
 
 @media (max-width: 768px) {
-  .flexible-images div {
+  .flexible-images {
     background-image: url("../images/mt_Fuji.jpg");
     width: auto;
     height: 50%;
