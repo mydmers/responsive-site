@@ -54,11 +54,21 @@ a {
 
 /* Header
 ------------------------------------------------------------*/
-.flexible-images img{
-    width: 100%;
-    height: auto;
-    background-size:cover;
-    margin:0px;
+.flexible-images div {
+	background-image:url("../images/mt_Fuji.jpg");
+	width: auto;
+	height: 100%;
+	background-size:cover;
+	margin: 0px;
+}
+@media (max-width: 768px) {
+    .flexible-images div {
+	background-image:url("../images/mt_Fuji.jpg");
+	width: auto;
+	height: 50%;
+	background-size:cover;
+	margin: 0px;
+	}
 }
 
 // Skills
